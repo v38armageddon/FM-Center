@@ -21,15 +21,84 @@
       xmlns:local="using:MediaBrowser"
       xmlns:utu="using:Uno.Toolkit.UI"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-  <ScrollViewer>
-    <Grid utu:SafeArea.Insets="VisibleBounds">
-      <StackPanel
-        HorizontalAlignment="Center"
-        VerticalAlignment="Center">
-        <TextBlock AutomationProperties.AutomationId="HelloTextBlock"
-          Text="Hello Uno Platform!"
-          HorizontalAlignment="Center" />
-      </StackPanel>
+
+    <Grid Background="#303952">
+        <!--Top-->
+        <CommandBar Background="#596275" IsOpen="False" OverflowButtonVisibility="Collapsed">
+            <AppBarButton x:Name="buttonWindow" x:FieldModifier="public" Click="buttonWindow_Click">
+                <SymbolIcon x:Name="symbolButtonWindow" Symbol="BackToWindow"/>
+            </AppBarButton>
+            <AppBarButton x:Name="buttonClose" Icon="Clear" Click="buttonClose_Click"/>
+        </CommandBar>
+        <CommandBar Background="#596275" HorizontalAlignment="Left" OverflowButtonVisibility="Collapsed">
+            <AppBarButton x:Name="buttonReturn" Icon="Back"/>
+            <AppBarButton x:Name="buttonHome" Icon="Home"/>
+        </CommandBar>
+
+        <!--Center-->
+        <Pivot Margin="0,48,0,48" SelectedIndex="1">
+            <PivotItem Header="Tasks">
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="buttonExit" Margin="54,43,0,0" VerticalAlignment="Top" Height="136" Width="225" Click="buttonExit_Click">
+                        <StackPanel>
+                            <SymbolIcon Symbol="DockBottom"/>
+                            <TextBlock Text="Exit"/>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="buttonAbout" Margin="54,43,0,0" VerticalAlignment="Top" Height="136" Width="225" Click="buttonAbout_Click">
+                        <StackPanel>
+                            <SymbolIcon Symbol="Help"/>
+                            <TextBlock Text="About"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </PivotItem>
+            <PivotItem Header="Pictures">
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="myPicturesButton" Margin="54,43,0,0" VerticalAlignment="Top" Height="136" Width="225" Click="myPicturesButton_Click">
+                        <StackPanel>
+                            <SymbolIcon Symbol="Pictures"/>
+                            <TextBlock Text="My Pictures"/>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="cameraButton" Margin="54,43,0,0" VerticalAlignment="Top" Height="136" Width="225" Click="cameraButton_Click">
+                        <StackPanel>
+                            <SymbolIcon Symbol="Camera"/>
+                            <TextBlock Text="Camera"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </PivotItem>
+            <PivotItem Header="Music">
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="myMusicButton" Margin="54,43,0,0" VerticalAlignment="Top" Height="136" Width="225" Click="myMusicButton_Click">
+                        <StackPanel>
+                            <SymbolIcon Symbol="MusicInfo"/>
+                            <TextBlock Text="My Music"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </PivotItem>
+            <PivotItem Header="Videos">
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="myVideosButton" Margin="54,43,0,0" VerticalAlignment="Top" Height="136" Width="225" Click="myVideosButton_Click">
+                        <StackPanel>
+                            <SymbolIcon Symbol="Video"/>
+                            <TextBlock Text="My Videos"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </PivotItem>
+            <PivotItem Header="Extras">
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="bingMapButton" Margin="54,43,0,0" VerticalAlignment="Top" Height="136" Width="225" Click="bingMapButton_Click">
+                        <Image Source="/Assets/Images/BingMap.jpg"/>
+                    </Button>
+                </StackPanel>
+            </PivotItem>
+        </Pivot>
+
+        <!--Bottom-->
+        <CommandBar Background="#1e2333" IsOpen="False" VerticalAlignment="Bottom" OverflowButtonVisibility="Collapsed"/>
     </Grid>
-  </ScrollViewer>
 </Page>

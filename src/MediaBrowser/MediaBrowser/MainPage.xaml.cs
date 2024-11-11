@@ -23,4 +23,49 @@ public sealed partial class MainPage : Page
     {
         this.InitializeComponent();
     }
+
+    private void buttonWindow_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
+
+    private void buttonClose_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
+
+    private void buttonExit_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
+
+    private void buttonAbout_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
+
+    private void myPicturesButton_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
+
+    private void cameraButton_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
+
+    private void myMusicButton_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
+
+    private void myVideosButton_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
+
+    private void bingMapButton_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
 }

@@ -39,5 +39,57 @@
       Mvvm;
     </UnoFeatures>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Assets\Images\UWP\AppIcon.altform-lightunplated_targetsize-16.png" />
+    <None Remove="Assets\Images\UWP\AppIcon.altform-lightunplated_targetsize-24.png" />
+    <None Remove="Assets\Images\UWP\AppIcon.altform-lightunplated_targetsize-256.png" />
+    <None Remove="Assets\Images\UWP\AppIcon.altform-lightunplated_targetsize-32.png" />
+    <None Remove="Assets\Images\UWP\AppIcon.altform-lightunplated_targetsize-48.png" />
+    <None Remove="Assets\Images\UWP\AppIcon.altform-unplated_targetsize-16.png" />
+    <None Remove="Assets\Images\UWP\AppIcon.altform-unplated_targetsize-24.png" />
+    <None Remove="Assets\Images\UWP\AppIcon.altform-unplated_targetsize-256.png" />
+    <None Remove="Assets\Images\UWP\AppIcon.altform-unplated_targetsize-32.png" />
+    <None Remove="Assets\Images\UWP\AppIcon.altform-unplated_targetsize-48.png" />
+    <None Remove="Assets\Images\UWP\AppIcon.scale-100.png" />
+    <None Remove="Assets\Images\UWP\AppIcon.scale-125.png" />
+    <None Remove="Assets\Images\UWP\AppIcon.scale-150.png" />
+    <None Remove="Assets\Images\UWP\AppIcon.scale-200.png" />
+    <None Remove="Assets\Images\UWP\AppIcon.scale-400.png" />
+    <None Remove="Assets\Images\UWP\AppIcon.targetsize-16.png" />
+    <None Remove="Assets\Images\UWP\AppIcon.targetsize-24.png" />
+    <None Remove="Assets\Images\UWP\AppIcon.targetsize-256.png" />
+    <None Remove="Assets\Images\UWP\AppIcon.targetsize-32.png" />
+    <None Remove="Assets\Images\UWP\AppIcon.targetsize-48.png" />
+    <None Remove="Assets\Images\UWP\LargeTile.scale-100.png" />
+    <None Remove="Assets\Images\UWP\LargeTile.scale-125.png" />
+    <None Remove="Assets\Images\UWP\LargeTile.scale-150.png" />
+    <None Remove="Assets\Images\UWP\LargeTile.scale-200.png" />
+    <None Remove="Assets\Images\UWP\LargeTile.scale-400.png" />
+    <None Remove="Assets\Images\UWP\MediumTile.scale-100.png" />
+    <None Remove="Assets\Images\UWP\MediumTile.scale-125.png" />
+    <None Remove="Assets\Images\UWP\MediumTile.scale-150.png" />
+    <None Remove="Assets\Images\UWP\MediumTile.scale-200.png" />
+    <None Remove="Assets\Images\UWP\MediumTile.scale-400.png" />
+    <None Remove="Assets\Images\UWP\PackageLogo.scale-100.png" />
+    <None Remove="Assets\Images\UWP\PackageLogo.scale-125.png" />
+    <None Remove="Assets\Images\UWP\PackageLogo.scale-150.png" />
+    <None Remove="Assets\Images\UWP\PackageLogo.scale-200.png" />
+    <None Remove="Assets\Images\UWP\PackageLogo.scale-400.png" />
+    <None Remove="Assets\Images\UWP\SmallTile.scale-100.png" />
+    <None Remove="Assets\Images\UWP\SmallTile.scale-125.png" />
+    <None Remove="Assets\Images\UWP\SmallTile.scale-150.png" />
+    <None Remove="Assets\Images\UWP\SmallTile.scale-200.png" />
+    <None Remove="Assets\Images\UWP\SmallTile.scale-400.png" />
+    <None Remove="Assets\Images\UWP\SplashScreen.scale-100.png" />
+    <None Remove="Assets\Images\UWP\SplashScreen.scale-125.png" />
+    <None Remove="Assets\Images\UWP\SplashScreen.scale-150.png" />
+    <None Remove="Assets\Images\UWP\SplashScreen.scale-200.png" />
+    <None Remove="Assets\Images\UWP\SplashScreen.scale-400.png" />
+    <None Remove="Assets\Images\UWP\WideTile.scale-100.png" />
+    <None Remove="Assets\Images\UWP\WideTile.scale-125.png" />
+    <None Remove="Assets\Images\UWP\WideTile.scale-150.png" />
+    <None Remove="Assets\Images\UWP\WideTile.scale-200.png" />
+    <None Remove="Assets\Images\UWP\WideTile.scale-400.png" />
+  </ItemGroup>
 
 </Project>

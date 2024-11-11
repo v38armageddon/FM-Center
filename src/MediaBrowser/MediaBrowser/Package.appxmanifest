@@ -1,12 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Package
   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
   xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
-  IgnorableNamespaces="uap rescap">
+  xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
+  IgnorableNamespaces="uap rescap uap3">
 
-  <Identity />
-  <Properties />
+  <Identity
+      Name="34823v38armageddon.268037BDE8D5B"
+      Publisher="CN=EF25BC35-CB3A-4D06-953A-49E6117D3FA3"
+      Version="3.0.0.0"/>
+  <Properties>
+      <DisplayName>MediaBrowser</DisplayName>
+      <PublisherDisplayName>v38armageddon</PublisherDisplayName>
+      <Logo>Assets\Images\UWP\PackageLogo.png</Logo>
+  </Properties>
 
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
@@ -21,11 +29,34 @@
     <Application Id="App"
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
-      <uap:VisualElements />
+      <uap:VisualElements
+          DisplayName="MediaBrowser"
+          Description="A modern unofficial version of Media Center."
+          BackgroundColor="#1e2333" Square150x150Logo="Assets\Images\UWP\MediumTile.png" Square44x44Logo="Assets\Images\UWP\AppIcon.png">
+        <uap:DefaultTile ShortName="MediaBrowser" Square71x71Logo="Assets\Images\UWP\SmallTile.png" Wide310x150Logo="Assets\Images\UWP\WideTile.png" Square310x310Logo="Assets\Images\UWP\LargeTile.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo"/>
+            <uap:ShowOn Tile="wide310x150Logo"/>
+            <uap:ShowOn Tile="square310x310Logo"/>
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+        <uap:SplashScreen BackgroundColor="#1e2333" Image="Assets\Images\UWP\SplashScreen.png"/>
+      </uap:VisualElements >
     </Application>
   </Applications>
 
   <Capabilities>
-    <rescap:Capability Name="runFullTrust" />
+      <rescap:Capability Name="runFullTrust" />
+      <uap:Capability Name="musicLibrary"/>
+      <uap:Capability Name="picturesLibrary"/>
+      <Capability Name="internetClient"/>
+      <uap:Capability Name="videosLibrary"/>
+      <uap:Capability Name="removableStorage"/>
+      <Capability Name="privateNetworkClientServer"/>
+      <Capability Name="internetClientServer"/>
+      <uap3:Capability Name="backgroundMediaPlayback"/>
+      <DeviceCapability Name="webcam"/>
+      <DeviceCapability Name="microphone"/>
+      <DeviceCapability Name="broadFileSystemAccess" />
   </Capabilities>
 </Package>

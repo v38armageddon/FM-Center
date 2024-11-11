@@ -24,26 +24,34 @@ public sealed partial class MainPage : Page
         this.InitializeComponent();
     }
 
+    // Top
     private void buttonWindow_Click(object sender, RoutedEventArgs e)
     {
-
+        
     }
 
     private void buttonClose_Click(object sender, RoutedEventArgs e)
     {
-
+        Application.Current.Exit();
     }
 
-    private void buttonExit_Click(object sender, RoutedEventArgs e)
+    // Center
+    // Task
+    private async void buttonExit_Click(object sender, RoutedEventArgs e)
     {
-
+        Dialogs.ExitDialog exitDialog = new Dialogs.ExitDialog();
+        exitDialog.XamlRoot = this.XamlRoot;
+        ContentDialogResult result = await exitDialog.ShowAsync();
     }
 
-    private void buttonAbout_Click(object sender, RoutedEventArgs e)
+    private async void buttonAbout_Click(object sender, RoutedEventArgs e)
     {
-
+        Dialogs.AboutDialog aboutDialog = new Dialogs.AboutDialog();
+        aboutDialog.XamlRoot = this.XamlRoot;
+        ContentDialogResult result = await aboutDialog.ShowAsync();
     }
 
+    // Pictures
     private void myPicturesButton_Click(object sender, RoutedEventArgs e)
     {
 
@@ -54,16 +62,19 @@ public sealed partial class MainPage : Page
 
     }
 
+    // Music
     private void myMusicButton_Click(object sender, RoutedEventArgs e)
     {
 
     }
 
+    // Videos
     private void myVideosButton_Click(object sender, RoutedEventArgs e)
     {
 
     }
 
+    // Extras
     private void bingMapButton_Click(object sender, RoutedEventArgs e)
     {
 

@@ -20,9 +20,9 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:local="using:MediaBrowser"
       xmlns:utu="using:Uno.Toolkit.UI"
-      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+      Background="#303952">
 
-    <Grid Background="#303952">
+    <Grid>
         <!--Top-->
         <CommandBar Background="#596275" IsOpen="False" OverflowButtonVisibility="Collapsed">
             <AppBarButton x:Name="buttonWindow" x:FieldModifier="public" Click="buttonWindow_Click">

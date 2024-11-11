@@ -40,6 +40,7 @@
     </UnoFeatures>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="AboutDialog.xaml" />
     <None Remove="Assets\Images\UWP\AppIcon.altform-lightunplated_targetsize-16.png" />
     <None Remove="Assets\Images\UWP\AppIcon.altform-lightunplated_targetsize-24.png" />
     <None Remove="Assets\Images\UWP\AppIcon.altform-lightunplated_targetsize-256.png" />
@@ -90,6 +91,16 @@
     <None Remove="Assets\Images\UWP\WideTile.scale-150.png" />
     <None Remove="Assets\Images\UWP\WideTile.scale-200.png" />
     <None Remove="Assets\Images\UWP\WideTile.scale-400.png" />
+    <None Remove="Dialogs\ExitDialog.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <UpToDateCheckInput Remove="AboutDialog.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Dialogs\ExitDialog.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Apps\" />
   </ItemGroup>
 
 </Project>

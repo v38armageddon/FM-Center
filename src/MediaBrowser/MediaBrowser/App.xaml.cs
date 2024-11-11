@@ -48,6 +48,7 @@ public partial class App : Application
             // Init elements here
             MainWindow.Title = "MediaBrowser";
             MainWindow.AppWindow.SetPresenter(Microsoft.UI.Windowing.AppWindowPresenterKind.FullScreen);
+            ElementSoundPlayer.State = ElementSoundPlayerState.On;
 
             // Create a Frame to act as the navigation context and navigate to the first page
             rootFrame = new Frame();
